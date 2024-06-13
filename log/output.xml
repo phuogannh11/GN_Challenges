@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.11.4 on win32)" generated="20240613 10:18:18.095" rpa="false" schemaversion="3">
+<suite id="s1" name="Search Flights" source="C:\Users\anhptp2\PycharmProjects\pythonProject1\testcase\search flights.robot">
+<test id="s1-t1" name="TC001: follow search flights" line="4">
+<kw name="open website" library="step">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${broswer}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240613 10:18:18.310" level="INFO">Opening browser 'Chrome' to base url 'https://www.bestprice.vn/'.</msg>
+<msg timestamp="20240613 10:18:18.751" level="WARN">The chromedriver version (125.0.6422.141) detected in PATH at C:\Users\anhptp2\PycharmProjects\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (126.0.6478.56); currently, chromedriver 126.0.6478.55 is recommended for chrome 126.*, so it is advised to delete the driver in PATH and retry</msg>
+<status status="PASS" starttime="20240613 10:18:18.310" endtime="20240613 10:18:21.128"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240613 10:18:21.128" endtime="20240613 10:18:21.160"/>
+</kw>
+<kw name="Reload Page" library="SeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<status status="PASS" starttime="20240613 10:18:21.160" endtime="20240613 10:18:21.268"/>
+</kw>
+<status status="PASS" starttime="20240613 10:18:18.310" endtime="20240613 10:18:21.268"/>
+</kw>
+<kw name="choose airports" library="step">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${flight_search_form}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240613 10:18:21.269" level="INFO">Clicking element '//*[@id="flight_search_form"]/div[1]/div[1]/div[1]/input'.</msg>
+<status status="PASS" starttime="20240613 10:18:21.269" endtime="20240613 10:18:21.348"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${flight_search_form_input}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20240613 10:18:21.349" endtime="20240613 10:18:21.381"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${flight_search_form_input}</arg>
+<arg>han</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240613 10:18:21.381" level="INFO">Typing text 'han' into text field '//*[@id="flight_search_form"]/div[1]/div[1]/div[1]/div/div[2]/div/div[2]/span/input'.</msg>
+<status status="PASS" starttime="20240613 10:18:21.381" endtime="20240613 10:18:21.435"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${flight_search_form_pop_up}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20240613 10:18:21.435" endtime="20240613 10:18:21.863"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=${Ha_Noi}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240613 10:18:21.864" level="INFO">Clicking element 'xpath=//*[@id="flight_search_form"]/div[1]/div[1]/div[1]/div/div[2]/div/div[2]/span/span/div/span[2]/div[1]/p/strong/strong'.</msg>
+<status status="PASS" starttime="20240613 10:18:21.863" endtime="20240613 10:18:21.936"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240613 10:18:24.937" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240613 10:18:21.936" endtime="20240613 10:18:24.937"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${flight_to_des_input}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20240613 10:18:24.938" endtime="20240613 10:18:24.962"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${flight_to_des_input}</arg>
+<arg>ho c</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240613 10:18:24.963" level="INFO">Typing text 'ho c' into text field '//*[@id="to_des"]/div/div/div[2]/div/div[2]/span/input'.</msg>
+<status status="PASS" starttime="20240613 10:18:24.962" endtime="20240613 10:18:25.008"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${flight_to_des_pop_up}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20240613 10:18:25.008" endtime="20240613 10:18:25.023"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240613 10:18:28.024" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240613 10:18:25.023" endtime="20240613 10:18:28.024"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=${Ho_Chi_Minh}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240613 10:18:28.026" level="INFO">Clicking element 'xpath=//*[@id="to_des"]/div/div/div[2]/div/div[2]/span/span/div/span[2]/div/p/strong'.</msg>
+<status status="PASS" starttime="20240613 10:18:28.025" endtime="20240613 10:18:28.082"/>
+</kw>
+<status status="PASS" starttime="20240613 10:18:21.268" endtime="20240613 10:18:28.082"/>
+</kw>
+<kw name="choose date" library="step">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${departure_date_flight}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240613 10:18:28.082" endtime="20240613 10:18:28.099"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${departure_date_flight}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240613 10:18:28.099" level="INFO">Clicking element '//*[@id="departure_date_flight"]'.</msg>
+<status status="PASS" starttime="20240613 10:18:28.099" endtime="20240613 10:18:28.148"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${datepicker_departure}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240613 10:18:28.148" endtime="20240613 10:18:28.167"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${datepicker_departure}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240613 10:18:28.167" level="INFO">Clicking element '//*[@id="ui-datepicker-div"]/div[1]/table/tbody/tr[5]/td[7]/a'.</msg>
+<status status="PASS" starttime="20240613 10:18:28.167" endtime="20240613 10:18:28.209"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${returning_date_flight}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240613 10:18:28.209" endtime="20240613 10:18:28.231"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${returning_date_flight}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240613 10:18:28.232" level="INFO">Clicking element '//*[@id="returning_date_flight"]'.</msg>
+<status status="PASS" starttime="20240613 10:18:28.232" endtime="20240613 10:18:28.289"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${datepicker_return}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240613 10:18:28.290" endtime="20240613 10:18:28.313"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${datepicker_return}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240613 10:18:28.314" level="INFO">Clicking element '//*[@id="ui-datepicker-div"]/div[2]/table/tbody/tr[1]/td[2]'.</msg>
+<status status="PASS" starttime="20240613 10:18:28.313" endtime="20240613 10:18:28.345"/>
+</kw>
+<status status="PASS" starttime="20240613 10:18:28.082" endtime="20240613 10:18:28.346"/>
+</kw>
+<kw name="search flights" library="step">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${search_button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240613 10:18:28.347" level="INFO">Clicking button '//*[@id="search_button"]'.</msg>
+<status status="PASS" starttime="20240613 10:18:28.347" endtime="20240613 10:18:29.603"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${area_filter_flight_depart}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20240613 10:18:29.604" endtime="20240613 10:18:29.625"/>
+</kw>
+<status status="PASS" starttime="20240613 10:18:28.346" endtime="20240613 10:18:29.625"/>
+</kw>
+<kw name="close website" library="step">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20240613 10:18:29.626" endtime="20240613 10:18:35.855"/>
+</kw>
+<status status="PASS" starttime="20240613 10:18:29.625" endtime="20240613 10:18:35.855"/>
+</kw>
+<status status="PASS" starttime="20240613 10:18:18.309" endtime="20240613 10:18:35.856"/>
+</test>
+<status status="PASS" starttime="20240613 10:18:18.098" endtime="20240613 10:18:35.856"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Search Flights">Search Flights</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20240613 10:18:18.751" level="WARN">The chromedriver version (125.0.6422.141) detected in PATH at C:\Users\anhptp2\PycharmProjects\chromedriver-win64\chromedriver.exe might not be compatible with the detected chrome version (126.0.6478.56); currently, chromedriver 126.0.6478.55 is recommended for chrome 126.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>

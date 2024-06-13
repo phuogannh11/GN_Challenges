@@ -1,0 +1,25 @@
+url: https://www.bestprice.vn/
+broswer: Chrome
+
+flight_search_form: //*[@id="flight_search_form"]/div[1]/div[1]/div[1]/input
+flight_search_form_input: //*[@id="flight_search_form"]/div[1]/div[1]/div[1]/div/div[2]/div/div[2]/span/input
+flight_search_form_pop_up: //*[@id="flight_search_form"]/div[1]/div[1]/div[1]/div/div[2]/div/div[2]/span/span/div/span[2]/div[1]/p
+Ha_Noi: //*[@id="flight_search_form"]/div[1]/div[1]/div[1]/div/div[2]/div/div[2]/span/span/div/span[2]/div[1]/p/strong/strong
+
+
+flight_to_des_input: //*[@id="to_des"]/div/div/div[2]/div/div[2]/span/input
+flight_to_des_pop_up: //*[@id="to_des"]/div/div/div[2]/div/div[2]/span/span/div
+Ho_Chi_Minh: //*[@id="to_des"]/div/div/div[2]/div/div[2]/span/span/div/span[2]/div/p/strong
+
+
+departure_date_flight: //*[@id="departure_date_flight"]
+datepicker_departure: //*[@id="ui-datepicker-div"]/div[1]/table/tbody/tr[5]/td[7]/a
+returning_date_flight: //*[@id="returning_date_flight"]
+datepicker_return: //*[@id="ui-datepicker-div"]/div[2]/table/tbody/tr[1]/td[2]
+
+
+flight_passenger: //*[@id="flight_passenger"]
+pop_up_flight_passenger: //*[@id="popover531779"]/div[2]/div/div[2]/div[2]/div/span[2]/div/i
+
+search_button: //*[@id="search_button"]
+area_filter_flight_depart: //*[@id="area_filter_flight_depart"]/div[2]/div[1]/div[1]
